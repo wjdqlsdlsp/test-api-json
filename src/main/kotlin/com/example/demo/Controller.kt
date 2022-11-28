@@ -8,13 +8,15 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class Controller {
 
-    @PostMapping("/test")
+    @PostMapping("/")
     fun testJson(@RequestBody request: String){
+        println("post실행")
         println("Post 방식 테스트 : ${request}")
     }
 
-    @GetMapping("/test")
+    @GetMapping("/")
     fun testJson2(@RequestBody request: String){
+        println("get실행")
         println("Get 방식 테스트 : ${request}")
     }
 }
