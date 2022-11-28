@@ -28,4 +28,4 @@ jobs:
             docker build -t test-api:0.1 .
             images_id=$(docker images -qa test-api:0.1)
             docker tag $images_id wjdqlsdlsp/test-api:0.1
-            docker push wjdqlsdlsp/road-helper:0.1
+            docker push wjdqlsdlsp/test-api:0.1
